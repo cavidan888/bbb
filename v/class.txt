@@ -1,0 +1,24 @@
+
+    class student
+    {
+        public int ID;
+        public string Name;
+        public string Surname;
+        public int Age;
+        
+
+        public student(string _name , string _surname, int _age)
+        {
+            Name = _name;
+            Surname = _surname;
+            Age = _age;
+        }
+
+        public void addStud()
+        {
+            Console.WriteLine("datalari yaz");
+            var Name = Console.ReadLine();
+            var Surname = Console.ReadLine();
+            var Age = Convert.ToInt32(Console.ReadLine());
+        }
+    }

@@ -1,0 +1,83 @@
+
+            List<student> db = new List<student>();
+
+            instructions();
+
+            void instructions()
+            {
+                Console.WriteLine("---------------------");
+                Console.WriteLine("1.Add Data");
+                Console.WriteLine("2.Read Data");
+                Console.WriteLine("3.Delete Data");
+                Console.WriteLine("4.Update Data");
+                Console.WriteLine("---------------------");
+
+                var emrRakami = Convert.ToInt32(Console.ReadLine());
+
+                switch (emrRakami)
+                {
+
+                    case 1:
+                        addStud();
+                        instructions();
+                        break;
+
+                    case 2:
+                        Read();
+                        instructions();
+                        break;
+
+                    case 3:
+                        Delete();
+                        instructions();
+                        break;
+
+
+                    default:
+                        Console.WriteLine("unknown command number");
+                        instructions();
+                        break;
+                }
+            }
+
+
+
+
+            void addStud()
+            {
+                
+                Console.WriteLine("adi yaz");
+                var Name = Console.ReadLine();
+                Console.WriteLine("soyAdi yaz");
+                var Surname = Console.ReadLine();
+                Console.WriteLine("Yasi yaz");
+                var Age = Convert.ToInt32(Console.ReadLine());
+                db.Add(new student(Name, Surname, Age));
+
+            }
+            
+            
+
+            void Read()
+            {
+                foreach (var item in db)
+                {
+                    
+                    Console.WriteLine(item.Name + " " + item.Surname + " " + item.Age);
+                }
+            }
+
+            void Delete()
+            {
+                Console.WriteLine("write what you want delete");
+                var emrRakami = Convert.ToInt32(Console.ReadLine());
+                db.Remove(db[emrRakami - 1]);
+            }
+
+
+            
+
+           
+        }
+    }
+    

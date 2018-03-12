@@ -1,0 +1,123 @@
+
+            //List<string> db = new List<string>();
+            //int count = 0;
+
+
+            //void instruction()
+            //{
+            //    Console.WriteLine("Emrlerin Siyahisi");
+            //    Console.WriteLine("1.Create Data");
+            //    Console.WriteLine("2.Read Data");
+            //    Console.WriteLine("3.Update Data");
+            //    Console.WriteLine("4.Delete Data");
+
+            //    int emrNomresi = Convert.ToInt32(Console.ReadLine());
+
+            //    switch (emrNomresi)
+            //    {
+
+            //        case 1:
+            //            Create();
+            //            instruction();
+            //            break;
+
+            //        case 2:
+            //            Read();
+            //            instruction();
+            //            break;
+
+            //        case 3:
+            //            Update();
+            //            instruction();
+            //            break;
+
+            //        case 4:
+            //            Delete();
+            //            instruction();
+            //            break;
+
+            //        default:
+            //            Console.WriteLine("Bele Emr Yoxdur");
+            //            instruction();
+            //            break;
+            //    }
+
+            //}
+
+
+
+
+
+
+            //void Create()
+            //{
+            //    Console.WriteLine("Write Data Which you Want Add");
+            //    db.Add(Console.ReadLine());
+            //    count++;
+            //}
+            //void Read()
+            //{
+            //    Console.WriteLine("Write Data Which you Want Read");
+
+
+            //    foreach (var item in db)
+            //    {
+            //        Console.WriteLine(count+"."+item);
+            //    }
+            //}
+
+            //void Update()
+            //{
+            //    Console.WriteLine("Write Data Which you Want Delete");
+            //}
+
+            //void Delete()
+            //{
+            //    Console.WriteLine("Write Data Which you Want Update");
+            //    int emrNomresi = Convert.ToInt32(Console.ReadLine());
+            //    db.Remove(db[emrNomresi-1]);
+            //}
+
+            //instruction();
+
+            while (true)
+            {
+                var weekDay = Console.ReadLine();
+
+                switch (weekDay)
+                {
+                    case "Sunday":
+                        Console.WriteLine("day is Sunday");
+                        break;
+
+                    case "Monday":
+                        Console.WriteLine("day is Monday");
+                        break;
+
+                    case "Tuesday":
+                        Console.WriteLine("day is Tuesday");
+                        break;
+
+                    case "Wednesday":
+                        Console.WriteLine("day is Wednesday");
+                        break;
+
+                    case "Thursday":
+                        Console.WriteLine("day is Thursday");
+                        break;
+
+                    case "Friday":
+                        Console.WriteLine("day is Friday");
+                        break;
+
+                    case "Saturday":
+                        Console.WriteLine("day is Saturday");
+                        break;
+
+                    default:
+                        Console.WriteLine("day isn't exist");
+                        break;
+                }
+            }
+           
+        }
